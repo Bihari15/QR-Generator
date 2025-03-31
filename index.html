@@ -93,7 +93,7 @@
         <div id="qrcode-container">
             <div id="qrcode"></div>
         </div>
-        <a id="download" href="#" download="my_qr_code.png">Download QR Code</a>
+        <a id="download" href="#" download="AA.png">Download QR Code</a>
     </div>
     <script>
         $(document).ready(function() {
@@ -109,7 +109,7 @@
                     $('#download').show();
                     var qrCanvas = $('#qrcode canvas')[0];
                     var imgData = qrCanvas.toDataURL("image/png");
-                    $('#download').attr('href', imgData).attr('download', 'custom_qr_code.png');
+                    $('#download').attr('href', imgData).attr('download', 'AA.png');
                 } else {
                     alert("Please enter some data to generate a QR code.");
                 }
